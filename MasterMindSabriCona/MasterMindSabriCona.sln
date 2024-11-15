@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterMindSabriCona", "MasterMindSabriCona\MasterMindSabriCona.csproj", "{2C49D68C-A3BE-4FB0-AFDB-8807EB70B8EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C49D68C-A3BE-4FB0-AFDB-8807EB70B8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C49D68C-A3BE-4FB0-AFDB-8807EB70B8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C49D68C-A3BE-4FB0-AFDB-8807EB70B8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C49D68C-A3BE-4FB0-AFDB-8807EB70B8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2EA83C7-3E40-4D51-A2EB-1193FFEED627}
+	EndGlobalSection
+EndGlobal
