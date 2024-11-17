@@ -1,4 +1,7 @@
-﻿<Window x:Class="MasterMindSabriCona.MainWindow"
+﻿
+
+
+<Window x:Class="MasterMindSabriCona.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -91,15 +94,15 @@
                     <ColumnDefinition Width="17*"/>
                     <ColumnDefinition Width="113*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="check_code" Margin="60,10,60,10" Background="DarkOrange" Cursor="Hand"  Content="check code" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2" >
+                <Button x:Name="check_code" Margin="60,10,60,10" Background="DarkOrange" Cursor="Hand"  Content="check code" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2" Click="check_code_Click" >
 
                 </Button>
             </Grid>
-            
-            
+
+
             <Grid Grid.Row="3" Margin="10,20,10,10">
-    <StackPanel x:Name="PreviousCombinationsPanel" Orientation="Vertical"/>
-</Grid>
+                <StackPanel x:Name="PreviousCombinationsPanel" Orientation="Vertical"/>
+            </Grid>
 
 
 
@@ -110,45 +113,14 @@
 
 
 
-
+            
 
 
 
 
         </Grid>
+        
+      
+        
     </Border>
 </Window>
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

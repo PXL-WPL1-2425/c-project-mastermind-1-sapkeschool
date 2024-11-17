@@ -74,16 +74,39 @@ namespace MasterMindSabriCona
                 }
             }
         }
+       
+
+        private Ellipse CreateColorEllipse(SolidColorBrush color)
+        {
+            return new Ellipse
+            {
+                Width = 20,
+                Height = 20,
+                Fill = color,
+                Margin = new Thickness(2)
+            };
+        }
+
+        private void check_code_Click(object sender, RoutedEventArgs e)
+        {
+            if (ComboBox1.SelectedItem == null || ComboBox2.SelectedItem == null || ComboBox3.SelectedItem == null || ComboBox4.SelectedItem == null)
+            {
+                MessageBox.Show("Please fill all 4 colors.", "Missing Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var color1 = (ComboBox1.SelectedItem as ComboBoxItem)?.Background as SolidColorBrush;
+            var color2 = (ComboBox2.SelectedItem as ComboBoxItem)?.Background as SolidColorBrush;
+            var color3 = (ComboBox3.SelectedItem as ComboBoxItem)?.Background as SolidColorBrush;
+            var color4 = (ComboBox4.SelectedItem as ComboBoxItem)?.Background as SolidColorBrush;
+
+            StackPanel colorCombination = new StackPanel { Orientation = Orientation.Horizontal, Margin = new Thickness(5) };
+            colorCombination.Children.Add(CreateColorEllipse(color1));
+            colorCombination.Children.Add(CreateColorEllipse(color2));
+            colorCombination.Children.Add(CreateColorEllipse(color3));
+            colorCombination.Children.Add(CreateColorEllipse(color4));
+            PreviousCombinationsPanel.Children.Add(colorCombination);
+
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
