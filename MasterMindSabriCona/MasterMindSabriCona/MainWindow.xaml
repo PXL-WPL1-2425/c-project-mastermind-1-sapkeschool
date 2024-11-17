@@ -9,7 +9,7 @@
         xmlns:local="clr-namespace:MasterMindSabriCona"
         mc:Ignorable="d"
              Title="Window1" Height="720" Width="1080">
-    <Border  Padding="5,30,5,5" Height="720" Width="1050">
+    <Border  Padding="5,30,5,5" Height="720" Width="1050" Background="Aqua">
         <Grid Margin="-5,5,5,-5">
             <Grid.RowDefinitions>
 
