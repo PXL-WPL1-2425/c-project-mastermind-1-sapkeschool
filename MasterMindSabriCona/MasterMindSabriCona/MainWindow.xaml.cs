@@ -1,5 +1,4 @@
-﻿
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -16,6 +15,9 @@ namespace MasterMindSabriCona
             ComboBox2.SelectionChanged += ComboBox2_SelectionChanged;
             ComboBox3.SelectionChanged += ComboBox3_SelectionChanged;
             ComboBox4.SelectionChanged += ComboBox4_SelectionChanged;
+
+            GenerateAndSetRandomColors();
+
 
         }
 
@@ -74,7 +76,7 @@ namespace MasterMindSabriCona
                 }
             }
         }
-       
+
 
         private Ellipse CreateColorEllipse(SolidColorBrush color)
         {
@@ -108,5 +110,20 @@ namespace MasterMindSabriCona
             PreviousCombinationsPanel.Children.Add(colorCombination);
 
         }
+
+        private void GenerateAndSetRandomColors()
+        {
+            string[] colorNames = { "Red", "Yellow", "Blue", "Green", "Orange", "White" };
+            Random random = new Random();
+
+            string randomColor1 = colorNames[random.Next(colorNames.Length)];
+            string randomColor2 = colorNames[random.Next(colorNames.Length)];
+            string randomColor3 = colorNames[random.Next(colorNames.Length)];
+            string randomColor4 = colorNames[random.Next(colorNames.Length)];
+
+            this.Title = $"Generated Colors: {randomColor1}, {randomColor2}, {randomColor3}, {randomColor4}";
+
+        }
+
     }
 }
